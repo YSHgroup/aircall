@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import Header from './components/Header';
+import { Divider, Typography } from '@mui/material';
 import './App.css';
 
 function App() {
