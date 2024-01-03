@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    // "baseUrl": "./src", // this is the base url so that access to any file within src directory without the ./
+    // "baseUrl": "./",
+    // "paths": {
+    //   "*": ["src/*"],
+    //   "root": ["*"]
+    // },
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "src?types"
+    ],
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src",
+    "src/custom.d.ts"
+  ]
+}
