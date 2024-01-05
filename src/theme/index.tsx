@@ -5,6 +5,7 @@ import {
 	CssBaseline,
 } from '@mui/material';
 import { palette } from './palette';
+import { overrides } from './overrides';
 
 
 const ThemeProvider: React.FC<{children: React.ReactNode}> = ({children}) => {
@@ -12,10 +13,11 @@ const ThemeProvider: React.FC<{children: React.ReactNode}> = ({children}) => {
         palette: palette
     }),[])
 	const theme = createTheme( memorizedTheme );
+    theme.components = overrides(theme)
 	return (
     <MUIThemeProvider theme={theme}>
-        {children}
         <CssBaseline />
+        {children}
     </MUIThemeProvider>);
 };
 

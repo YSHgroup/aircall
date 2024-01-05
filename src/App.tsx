@@ -2,13 +2,16 @@
 import { RouterProvider } from 'react-router-dom';
 import { Divider, Typography } from '@mui/material';
 import { router } from './routes';
+import ThemeProvider from './theme';
 import './App.css';
 
 function App() {
 	return (
 		<div className='app container'>
 			{/* <div className="container-view">Some activities should be here</div> */}
-			<RouterProvider router={router} />
+			<ThemeProvider>
+				<RouterProvider router={router} />
+			</ThemeProvider>
 		</div>
 	);
 }
