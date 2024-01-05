@@ -12,7 +12,7 @@
 .header .logo{
   /* padding: 20px 0; */
   display: flex;
-  width: 35%; 
+  width: 30%; 
   height: 100%;
 }
 
@@ -25,7 +25,7 @@
   position: relative;
   top: 5px;
   height: calc(100% - 5px);
-  width: 65%;
+  width: 70%;
   overflow: hidden;
   /* background-color: white; */
   border-top-right-radius: .5rem;
@@ -91,7 +91,7 @@
   width: 55px;
   transform: skewX(-30deg);
   background-color: var(--background-paper-color);
-  height: 91%;
+  height: 87%;
   border-bottom-right-radius: 16px;
   border-style: solid;
   border-color: black;

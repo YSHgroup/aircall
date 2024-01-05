@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../Layout/Root";
 import Activity from '../pages/Activity'
+import Archive from '../pages/Archive'
 
 export const router = createBrowserRouter([{
     path: '/',
@@ -13,6 +14,10 @@ export const router = createBrowserRouter([{
             path: 'activity',
             element: <Activity />,
             errorElement: <h2>Not founded</h2>
+        },
+        {
+            path: 'archive',
+            element: <Archive />,
         }
     ]
 }])
