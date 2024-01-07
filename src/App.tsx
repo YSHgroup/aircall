@@ -3,7 +3,7 @@ import { RouterProvider } from 'react-router-dom';
 import { Divider, Typography } from '@mui/material';
 import { router } from './routes';
 import ThemeProvider from './theme';
-import './App.css';
+// import './App.css';
 
 function App() {
 	return (
